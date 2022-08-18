@@ -1,0 +1,481 @@
+/*Aplico reset*/
+
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+
+
+
+            /*ESTILOS GENERALES*/
+
+/*Estilo fondo*/
+
+html{
+    height: 100%;
+}
+
+.volver{
+    background-color: rgb(0, 0, 0);
+    color: greenyellow;
+    list-style: none;
+}
+
+.volver:hover{
+    box-shadow: 1px 5px 8px black;
+}
+
+
+body{
+    background-image: linear-gradient(to right,rgb(21, 25, 101),
+    rgb(50, 64, 123),
+    rgb(81, 85, 133),
+    rgb(70, 181, 209));
+}
+
+/*Estilo menu*/
+
+
+header h1{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header nav{
+    justify-content: center;
+}
+
+header nav ul{
+    text-align: center;
+}
+
+header nav ul li{
+    margin-inline: 10px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: bold;
+    list-style: none;
+    background-color: rgba(58, 9, 104, 0.758);
+    padding: 5px;
+}
+
+header nav ul li:hover{
+    background-color: gold;
+    box-shadow: 1px 8px 10px black;
+    transform: rotate(7deg);
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: green;
+}
+
+
+h1{
+    color: rgba(9, 9, 70, 0.936);
+    font-family:Acrobat,Arial Unicode MS,Impact,Arial Black,sans-serif!important;
+}
+
+/*Estilo main*/
+
+main{
+    height: 100%;
+    margin: 50px;
+}
+
+/*Estilo del footer*/
+
+
+
+footer ul li{
+    display: inline;
+    margin-inline: 10px;
+}
+
+footer ul{
+    margin-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+    color: gold;
+}
+
+footer .insta{
+    width: 3%;
+}
+
+footer .face{
+    width: 3%;
+}
+
+footer .twitt{
+    width: 3%;
+}
+
+
+    /*ESTILOS INDEX*/
+
+
+/*Estilos header*/
+
+header figure img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 7%;
+}
+
+/*Efectos de img*/
+
+.girarWebb{
+    margin: 50px;
+    width: 50%;
+}
+
+.girarWebb{
+    animation-name: girar;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+
+
+    /*ESTILOS ARTICULOS*/
+
+
+/*Estilo main*/
+
+
+.remera{
+    width: 50%;
+}
+.poster{
+    width: 50%;
+}
+.canguro{
+    width: 50%;
+}
+.collar{
+    width: 60%;
+}
+
+main section article img{
+    margin: 20px;
+}
+
+.articulos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+    grid-template-areas: "remera poster"
+                         "canguro collar";
+}
+
+.remera{
+    grid-area: remera;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.poster{
+    grid-area: remera;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.canguro{
+    grid-area: canguro;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.collar{
+    grid-area: collar;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+
+
+
+
+
+
+    /*ESTILOS CONTACTO*/
+
+/*Estilo form*/
+
+
+
+form{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.449), rgba(0, 0, 128, 0.751), rgba(241, 50, 50, 0.592));
+    margin: 60px;
+}
+
+form div fieldset{
+    color: whitesmoke;
+}
+
+.datos{
+    color: gold;
+    text-align: center;
+}
+
+.mapa{
+    margin: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+    /*ESTILOS GALERIA*/
+
+/*Estilo main*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+    grid-template-areas: "img-1 img-2"
+                         "img-3 img-4"
+                         "img-5 img-6"
+                         "img-7";
+}
+
+.img-1{
+    grid-area: img-1;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.img-2{
+    grid-area: img-2;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.img-3{
+    grid-area: img-3;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.img-4{
+    grid-area: img-4;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.img-5{
+    grid-area: img-5;
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+    .img-6{
+    grid-area: img-6;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.img-7{
+    grid-area: img-7;
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+main section figure .primerImagen{
+    width: 90%;
+}
+
+main section figure .primerSelfie{
+    width: 70%;
+}
+
+main section figure .segundaSelfie{
+    width: 90%;
+}
+
+main section figure .espacioProfundo{
+    width: 90%;
+}
+
+main section figure .galaxias{
+    width: 75%;
+}
+
+main section figure .nebulosaCarina{
+    width: 90%
+}
+
+main section figure .nebulosaAnillo{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+    /*ESTILOS HISTORIA*/
+
+/*Estilo tabla*/
+
+
+table {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.449), rgba(0, 0, 128, 0.751), rgba(241, 50, 50, 0.592));
+    margin-left: 15%;
+    margin-top: 50px;
+    width: 70%;
+    border: 2px solid #000;
+    border-spacing: 5px;
+}
+
+th, td {
+    color: aliceblue;
+    width: 60%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.1em;
+    caption-side: bottom;
+}
+
+th {
+    text-align: center;
+    background: rgba(255, 200, 0, 0.618);
+}
+
+td{
+    background: rgba(192, 192, 192, 0.342);
+}
+
+
+/*Estilo video*/
+
+
+.video{
+    margin: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Estilo div*/
+
+
+.caja{
+    margin-top: 70px;
+}
+
+.caja h2{
+    background: rgba(255, 200, 0, 0.618);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.caja p{
+    color: antiquewhite;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 35px;
+    text-align: start;
+}
+
+
+
+
+    
+
+    /*MEDIAQUERIES*/
+
+/* Estilo mobile -- Galeria*/
+
+    
+
+    
+@media sreen and (min-width: 480px){
+    .galeria{
+        background-color: tomato;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:  14.2857143% 14.2857143% 14.2857143% 142857143% 14.2857143% 14.2857143% 14.2857143%;
+    
+        grid-template-areas: "img-1" 
+                             "img-2"
+                             "img-3" 
+                             "img-4"
+                             "img-5"
+                             "img-6"
+                             "img-7";
+        }
+
+    .img-1{
+        grid-area: img-1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .img-2{
+        grid-area: img-2;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    
+    .img-3{
+        grid-area: img-3;
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    
+    .img-4{
+        grid-area: img-4;
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    
+    .img-5{
+        grid-area: img-5;
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+    
+    .img-6{
+        grid-area: img-6;
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+    
+    .img-7{
+        grid-area: img-7;
+        grid-row-start: 7;
+        grid-column-start: 1;
+    }
+}
